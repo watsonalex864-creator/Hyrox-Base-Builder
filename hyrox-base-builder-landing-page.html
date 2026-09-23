@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HYROX Base Builder — Free 8-Week Training Program | Alex Watson Coaching</title>
+<style>
+  :root {
+    --black: #0B0B0C;
+    --red: #38B6FF;
+    --off-white: #EDEAE3;
+    --blue: #38B6FF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+    background: var(--off-white);
+    color: var(--black);
+  }
+  p, li, label, input, button { font-family: Arial, Helvetica, sans-serif; }
+
+  .hero {
+    background: var(--black);
+    color: var(--off-white);
+    padding: 60px 24px 70px;
+    text-align: center;
+    position: relative;
+  }
+  .hero .tag {
+    font-family: 'Consolas', monospace;
+    color: var(--red);
+    letter-spacing: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-size: clamp(38px, 7vw, 64px);
+    text-transform: uppercase;
+    line-height: 1.05;
+    margin: 16px 0 20px;
+  }
+  .hero h1 span { color: var(--red); }
+  .hero p.sub {
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.6;
+    opacity: 0.85;
+  }
+  .hero .bar { position: absolute; bottom: 0; left: 0; width: 100%; height: 8px; background: var(--red); }
+
+  .content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 50px 24px;
+  }
+  .content h2 {
+    text-transform: uppercase;
+    font-size: 26px;
+    border-bottom: 4px solid var(--black);
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+  }
+  .content p { font-size: 16px; line-height: 1.7; margin-bottom: 14px; }
+
+  .why-block {
+    background: var(--black);
+    color: var(--off-white);
+    padding: 22px 26px;
+    margin: 24px 0;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .why-block b { color: var(--red); }
+
+  .phases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 20px 0 10px;
+  }
+  .phase-card {
+    background: #fff;
+    border: 2px solid var(--black);
+    padding: 16px;
+  }
+  .phase-card .num {
+    font-family: 'Consolas', monospace;
+    color: var(--red);
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .phase-card h3 { text-transform: uppercase; font-size: 18px; margin: 6px 0; }
+  .phase-card p { font-size: 13.5px; margin: 0; }
+
+  @media (max-width: 600px) {
+    .phases { grid-template-columns: 1fr; }
+  }
+
+  .form-section {
+    background: var(--black);
+    color: var(--off-white);
+    padding: 50px 24px;
+    text-align: center;
+  }
+  .form-section h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .form-section p {
+    max-width: 480px;
+    margin: 0 auto 26px;
+    font-size: 15px;
+    opacity: 0.85;
+    line-height: 1.6;
+  }
+  form {
+    max-width: 420px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  input[type="text"], input[type="email"] {
+    padding: 14px 16px;
+    border: none;
+    font-size: 15px;
+    background: var(--off-white);
+    color: var(--black);
+  }
+  button {
+    background: var(--red);
+    color: var(--off-white);
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Oswald', Arial, sans-serif;
+    cursor: pointer;
+  }
+  button:hover { opacity: 0.9; }
+  .fine-print {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 14px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: #6b675f;
+    font-family: 'Consolas', monospace;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="tag">Free 8-Week Training Program</div>
+  <h1>HYROX<br><span>BASE BUILDER</span></h1>
+  <p class="sub">You've done the homework. Now here's the plan that gets you race-ready — eight weeks of structured station work, running, and compromised running, built the way HYROX actually demands it.</p>
+  <div class="bar"></div>
+</div>
+
+<div class="content">
+  <h2>Why Most Free Plans Fall Short</h2>
+  <p>Most free HYROX plans are a running plan with some workouts bolted on, or a station-work list with no running structure behind it. Neither reflects race day: eight stations, each one preceded by a kilometre of running on legs that are already compromised from the station before.</p>
+  <div class="why-block">This program is built around one principle: <b>train the transition, not just the pieces.</b> Every week includes sessions where you run into fatigue and then hit a station, or hit a station and then run — because that's the actual demand of the race.</div>
+
+  <h2>How It's Structured</h2>
+  <p>3 sessions a week, 60-75 minutes each, over 8 weeks:</p>
+  <div class="phases">
+    <div class="phase-card">
+      <div class="num">WEEKS 1-3</div>
+      <h3>Base</h3>
+      <p>Work capacity across all 8 stations, running base, technique under mild fatigue.</p>
+    </div>
+    <div class="phase-card">
+      <div class="num">WEEKS 4-6</div>
+      <h3>Build</h3>
+      <p>Increased loads and intensity, stations combined back-to-back, compromised running.</p>
+    </div>
+    <div class="phase-card">
+      <div class="num">WEEKS 7-8</div>
+      <h3>Peak</h3>
+      <p>Partial then full race simulation, taper into your test — or your actual race.</p>
+    </div>
+  </div>
+
+  <h2>Who It's For</h2>
+  <p>You've got a running base (comfortable covering 5-8km) and you already know your way around the eight stations — whether from racing before, training on your own, or working through the HYROX beginner guide. This is the bridge from "capable" to "race ready," not a couch-to-HYROX plan.</p>
+</div>
+
+<div class="form-section">
+  <h2>Get the Full Program</h2>
+  <p>Enter your details and the complete 8-week PDF — every session, every week, plus a progress tracking table — lands in your inbox.</p>
+  <form action="https://formspree.io/f/mbglylzz" method="POST">
+    <input type="text" name="name" placeholder="First name" required>
+    <input type="email" name="email" placeholder="Email address" required>
+    <button type="submit">Send Me The Program</button>
+  </form>
+  <p class="fine-print">No spam. Unsubscribe any time.</p>
+</div>
+
+<footer>ALEX WATSON COACHING &nbsp;·&nbsp; @ALEXWATSONCOACH</footer>
+
+</body>
+</html>
